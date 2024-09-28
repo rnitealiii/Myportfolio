@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Work Showcase</title>
+    <style>
+        /* Same CSS styling as previous pages for consistency */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding-top: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .project {
+            background-color: #000;
+            padding: 15px;
+            border: 2px solid #FFD700;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-title {
+            color: #FFD700;
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .project-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            background-color: #FFD700;
+            color: #000;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-link:hover {
+            background-color: #000;
+            color: #FFD700;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #FFD700;
+            color: #000;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #000;
+            color: #FFD700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .project img {
+                height: auto;
+            }
+
+            .project-title {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Other Work Showcase</h1>
+        <div class="projects">
+            <div class="project">
+                <img src="transcription-project1.jpg" alt="Transcription Project 1">
+                <div class="project-title">Transcription Project 1</div>
+                <a href="https://example.com/transcription1" class="project-link" target="_blank">View Details</a>
+            </div>
+            <div class="project">
+                <img src="admin-project1.jpg" alt="Admin Project 1">
+                <div class="project-title">Admin Project 1</div>
+                <a href="https://example.com/admin1" class="project-link" target="_blank">View Details</a>
+            </div>
+            <div class="project">
+                <img src="data-entry-project1.jpg" alt="Data Entry Project 1">
+                <div class="project-title">Data Entry Project 1</div>
+                <a href="https://example.com/dataentry1" class="project-link" target="_blank">View Details</a>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn" onclick="window.history.back();">Go Back</button>
+            <button class="btn" onclick="window.location.href='index.html';">Go to Main Page</button>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Muhammad Ali. All Rights Reserved.
+    </footer>
+</body>
+</html>
