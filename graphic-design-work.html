@@ -1,137 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphic Design Work</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #fff;
-            color: #000;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Graphic Design Showcase - Muhammad Ali</title>
 
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-            padding-top: 40px;
-        }
+  <!-- Slick Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-        h1 {
-            text-align: center;
-            font-size: 3em;
-            color: #FFD700;
-            margin-bottom: 20px;
-        }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
 
-        .designs {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
 
-        .design {
-            background-color: #000;
-            padding: 15px;
-            border: 2px solid #FFD700;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 0;
+    }
 
-        .design:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-        }
+    h2 {
+      font-size: 2.5rem;
+      margin: 40px 0 20px;
+      text-align: center;
+      color: #FFD700;
+    }
 
-        .design img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+    .slider {
+      width: 100%;
+      margin: auto;
+      padding: 10px 0;
+    }
 
-        .design-title {
-            color: #FFD700;
-            font-size: 1.2em;
-            text-align: center;
-            margin-top: 10px;
-        }
+    .slider img {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
 
-        .buttons {
-            text-align: center;
-            margin-top: 20px;
-        }
+    .slick-prev:before,
+    .slick-next:before {
+      color: #FFD700;
+      font-size: 30px;
+    }
 
-        .btn {
-            background-color: #FFD700;
-            color: #000;
-            padding: 10px 20px;
-            margin: 10px;
-            border: none;
-            font-size: 1.1em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #fff;
+    }
 
-        .btn:hover {
-            background-color: #000;
-            color: #FFD700;
-        }
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 1.8rem;
+      }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #000;
-            color: #fff;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
-            }
-
-            .design img {
-                height: auto;
-            }
-
-            .design-title {
-                font-size: 1em;
-            }
-        }
-    </style>
+      .slider img {
+        max-width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Graphic Design Work</h1>
-        <div class="designs">
-            <div class="design">
-                <img src="graphic-design1.jpg" alt="Project 1 - Logo Design">
-                <div class="design-title">Project 1 - Logo Design</div>
-            </div>
-            <div class="design">
-                <img src="graphic-design2.jpg" alt="Project 2 - Brochure Design">
-                <div class="design-title">Project 2 - Brochure Design</div>
-            </div>
-            <div class="design">
-                <img src="graphic-design3.jpg" alt="Project 3 - Website Banner">
-                <div class="design-title">Project 3 - Website Banner</div>
-            </div>
-        </div>
 
-        <div class="buttons">
-            <button class="btn" onclick="window.history.back();">Go Back</button>
-            <button class="btn" onclick="window.location.href='all-project.html';">Go to Main Page</button>
-        </div>
+  <div class="container">
+    <h2>Logos</h2>
+    <div class="slider logos-slider">
+      <div><img src="images/logos/logo1.jpg" alt="Logo 1"></div>
+      <div><img src="images/logos/logo2.jpg" alt="Logo 2"></div>
+      <div><img src="images/logos/logo3.jpg" alt="Logo 3"></div>
     </div>
 
-    <footer>
-        © 2024 Muhammad Ali. All Rights Reserved.
-    </footer>
+    <h2>Thumbnails</h2>
+    <div class="slider thumbnails-slider">
+      <div><img src="images/thumbs/thumb1.jpg" alt="Thumbnail 1"></div>
+      <div><img src="images/thumbs/thumb2.jpg" alt="Thumbnail 2"></div>
+      <div><img src="images/thumbs/thumb3.jpg" alt="Thumbnail 3"></div>
+    </div>
+
+    <h2>Posts</h2>
+    <div class="slider posts-slider">
+      <div><img src="images/posts/post1.jpg" alt="Post 1"></div>
+      <div><img src="images/posts/post2.jpg" alt="Post 2"></div>
+      <div><img src="images/posts/post3.jpg" alt="Post 3"></div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Muhammad Ali. All Rights Reserved.
+  </footer>
+
+  <!-- jQuery + Slick JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.logos-slider, .thumbnails-slider, .posts-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: false,
+      });
+    });
+  </script>
 </body>
 </html>
